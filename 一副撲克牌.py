@@ -9,17 +9,25 @@ def poker():
     while count < 53:
         num.append(count)
         count += 1
-    for i in num:
-        for j in suit:
-            if i%13==1:
-                print(j, x)
-            elif i%13==11:
-                print(j, y)
-            elif i%13==12:
-                print(j, z)
-            elif i%13==0:
-                print(j, u)
+    for i in suit:
+        for j in num:
+            if j<=13:
+                print(suit[0])
+            elif j<=26:
+                print(suit[1])
+            elif j<=39:
+                print(suit[2])
+            elif j<=52:
+                print(suit[3])
+            if j%13==1:
+                print(x)
+            elif j%13==11:
+                print(y)
+            elif j%13==12:
+                print(z)
+            elif j%13==0:
+                print(u)
             else:
-                print(j, i%13)
+                print(j%13)
             
 poker()
