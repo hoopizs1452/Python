@@ -1,6 +1,6 @@
 import random
 
-def generate_code(code_len=4):
+def generate_code(code_len=16):
     all_chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     last_pos = len(all_chars) - 1
     code = ''
